@@ -1,0 +1,32 @@
+.search-bar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 4px 24px 0 rgba(34, 41, 47, 0.1);
+}
+
+#search-input {
+  width: calc(100% - 50px);
+  border: none;
+  display: inline-block;
+  outline: none;
+  color: #5e5873;
+  font-size: 0.8rem;
+}
+
+#search-input::placeholder {
+  font-family: var(--font-family);
+  color: #5e5873;
+}
+
+#search-input:focus::placeholder {
+  font-weight: 500;
+}
+
+.search-icon {
+  color: #b9b9c3;
+}

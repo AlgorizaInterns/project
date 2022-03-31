@@ -1,0 +1,15 @@
+.rating-stars {
+  display: flex;
+}
+
+.star-icon {
+  color: #b9b9c3;
+}
+
+.stared {
+  color: #ff9f43;
+}
+
+.up {
+  color: #7367f0;
+}
