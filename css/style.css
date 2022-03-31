@@ -1,0 +1,310 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color:#f6f6f6 ;
+}
+
+.sidenav {
+  height: 100vh;
+  width: 260px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  background-color: #fff;
+  overflow-x: hidden;
+  padding-top: 20px;
+ 
+}
+nav .nav-links .bell,.cardshop{
+position: relative;
+}
+
+nav .nav-links .bell span{
+  position: absolute;
+  top: 9px;
+left: 25px;
+background-color: red;
+width: 20px;
+height: 20px;
+border-radius: 50%;
+}
+nav .nav-links .cardshop span{
+  position: absolute;
+  top: 9px;
+left: 25px;
+background-color: #7367f0;
+width: 20px;
+height: 20px;
+border-radius: 50%;
+}
+aside .badge {
+  margin-left: 17px;
+  text-align: center;
+  border-radius: 50%;
+  padding: 0px 5px;
+  background-color: rgba(255,159,67,.12);
+  color: #ff9f43!important;
+ font-size: smaller;
+ font-weight: 600;
+}
+aside  .cardsbadge{
+  margin-left: 40px;
+  text-align: center;
+  border-radius: 50%;
+  padding: 3px 10px;
+  background-color: rgba(40,199,111,.12);
+  color: #28c76f!important;
+ font-size: smaller;
+ font-weight: 600;
+}
+aside .chartsbadge{
+  margin-left: 72px;
+  text-align: center;
+  border-radius: 50%;
+  padding: 2px 6px;
+  background-color: rgba(234,84,85,.12);
+  color: #ea5455!important;
+ font-size: smaller;
+ font-weight: 600;
+}
+.sidenav:hover{
+  overflow-y: scroll;
+}
+
+.sidenav a, .dropdown-btn {
+  padding: 13px 8px 13px 16px;
+  text-decoration: none;
+  color: #625f6e;
+  display: block;
+  border: none;
+  background: none;
+  width:100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  font-size: 1.2rem;
+
+  font-family: 'Montserrat', sans-serif;
+  
+}
+.sidenav p{
+  padding: 6px 8px 6px 16px;
+  color: #a6a4b0;
+  line-height: 1.5;
+  letter-spacing: .01rem;
+ }
+  /* .dropdown-btn{
+background-color:  #f5f5f5;
+  } */
+  /* On mouse-over */
+  .sidenav a:hover, .dropdown-btn:hover {
+    color:#818181 ;
+     transform: translateX(5px);
+     transition: transform .25s ;
+  }
+  
+  /* Main content */
+  .main {
+    margin-left: 200px; 
+    font-size: 20px; 
+    padding: 0px 10px;
+  }
+  
+  /* Add an active class to the active dropdown button */
+  .active {
+    background-color: #f5f5f5;
+    color:#818181 ;
+  }
+  
+  /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+  .dropdown-container {
+    display: none;
+    background-color: #fff;
+    padding-left: 8px;
+  }
+  
+  /* Optional: Style the caret down icon */
+  .fa-caret-down {
+    float: right;
+    padding-right: 8px;
+  }
+.brand_logo img{
+  width: 36px;
+  height: 36px;
+  
+    }
+    .brand_logo i{
+      flex: 1;
+    }
+    .brand_logo div{
+      color:#7367f0;
+        display: flex;
+        align-items: center;
+  
+    }
+    
+    .brand_logo h1{
+      font-weight: 600;
+      letter-spacing: .01rem;
+      font-size: 1.45rem;
+      margin-left: 10px;
+  
+    }
+
+/* ################ Grid System ###################  */
+.grid{
+  display :grid;
+  /* background-color: gainsboro; */
+  height: 100vh;
+  gap:20px 20px;
+  grid-template-columns: repeat(10,1fr);
+  grid-template-rows: repeat(10,1fr);
+  /* grid-auto-rows: minmax(50px, auto); */
+  grid-template-areas: "sidebar sidebar nav nav nav nav nav nav nav nav "
+   "sidebar sidebar filter filter product product product product product product" ;
+}
+
+aside{
+  background-color: white;
+  grid-area: sidebar;
+  grid-row: 1/11;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  /* position: fixed; */
+ 
+}
+.filter{
+  grid-area: filter;
+  background-color: white;
+  grid-row: 4/auto;
+  height: 1200px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  padding: 20px 20px;
+  color: #625f6e;
+
+  font-family: 'Montserrat', sans-serif;
+ 
+}
+.filter  p{
+   margin-bottom: 12px;
+   margin-top: 12px;
+   font-weight: 600;
+   font-size: 15px;
+}
+.filter input{
+  margin-bottom: 12px;
+}
+.productsection{
+  grid-area: product;
+
+  grid-row: 4/auto;
+ padding-bottom: 150px;
+
+
+}
+.price p{
+float: right;
+font-weight: 600;
+}
+/* ################Style Of Top Navbar###################  */
+nav{
+
+  grid-area: nav; 
+  height: 60px;
+  background-color: #fff;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  margin-top: 20px;
+  margin-right: 20px;
+  /* position: sticky; 
+  top: 0; */
+  /* z-index: 999; */
+
+}
+/* nav div{
+  background-color: #7367f0 !important;
+} */
+nav .logo{
+  float: left;
+}
+nav .nav-links .name, .flag{
+display: flex;
+align-items: center;
+
+}
+
+.nav a {
+  float: right;
+  color: #625f6e;
+  text-align: center;
+  padding: 20px 14px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.clr{
+  clear: both;
+}
+.card h3{
+  min-height:55px;
+}
+.card:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  transition: transform .30s ;
+}
+.card {
+
+  max-width: 300px;
+  margin: auto;
+
+  background-color: white;
+  font-family: "Montserrat,Helvetica,Arial,serif";
+  color: #6e6b7b;
+  border-radius: 7px;
+ 
+}
+.card div{
+  padding: 0px 10px;
+}
+.card .description{
+  font-size: .875rem;
+  margin-top: 0.2rem;
+}
+.card .cartbutton {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #7367f0;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+.card .wishbutton{
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: #2a2e30;
+  background-color: #f6f6f6;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  margin-top: 3px;
+}
+.products{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 20px;
+  align-items: stretch;
+  
+}
