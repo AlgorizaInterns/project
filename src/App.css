@@ -1,0 +1,112 @@
+
+/*==============General===============*/
+*,html,body{
+  box-sizing: border-box;
+}
+html{
+  letter-spacing: .01rem;
+}
+ul{
+  list-style-type: none;
+}
+/* =============HeaderComponent============== */
+
+.nav{
+  display: flex;
+  position: sticky;
+  justify-content: center;
+  justify-content: space-between;
+  margin: 1.3rem 2rem 0;
+  border-radius: .428rem;
+  box-shadow: 0 4px 24px 0 rgb(34 41 47 / 10%);
+  background: #fff;
+  padding:0;
+  transition: all .3s ease,background 0s;
+  /* width: calc(100% - 4rem - 260px); */
+}
+ul li{
+  padding-right: 3em;
+}
+.bookmark-wrapper{
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+}
+.info-wrapper{
+
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+
+}
+.ahmed{
+  background-color: red;
+}
+
+
+/*===========Drawer============*/
+.logo{
+  display: flex;
+}
+
+
+/*==========Content=============*/
+
+.productsSection{
+  display: grid;
+  justify-content: center;
+  
+  grid-template-columns: 1fr 1fr 1fr;
+ /*  grid-auto-rows: minmax(30px,140px); */
+  
+  margin: 2rem;
+  grid-gap: 2rem;
+}
+.card{
+   display: flex;
+   flex-direction: column;
+   background-color: red;
+  
+   padding:3rem;
+   overflow: hidden;
+   box-shadow: 0 4px 24px 0 rgb(34 41 47 / 10%);
+   background-color: #fff;
+   background-clip: border-box;
+   border-radius: .428rem;
+   line-height: 1.5rem;
+   
+
+}
+.rating{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+
+/*===============SearchBar==================*/
+.ecommerce-searchbar{
+  
+  margin: 2em;
+}
+.input-group{
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-shadow: 0 2px 8px 0 rgb(34 41 47 / 14%);
+  box-shadow: 0 2px 8px 0 rgb(34 41 47 / 14%);
+  border-radius: .3rem;
+  align-items: stretch;
+  width: 100%;
+  padding: .438rem 1rem;
+  width:100%;
+
+  
+}
+.search-products{
+  border: none;
+  flex: 1 1 auto;
+  border-radius: .357rem;
+  background-color: #fff;
+  background-clip: padding-box;
+  width: 100%;
+}
