@@ -1,0 +1,128 @@
+.body__wrapper
+{
+    max-width: 100%;
+    height: 100%;
+    background-color: #f8f8f8;
+}
+.body__wrapper.dark
+{
+    background-color: #161d31;
+}
+.container
+{
+    padding: 10.8rem 2.8rem 0 2.8rem;
+    color: #636363;
+    margin-left: 260px;
+    transition: all .4s cubic-bezier(.25,.8,.25,1),background 0s;
+}
+
+.main__header{
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+.header__path
+{
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+
+}
+.header__path ol li:last-child
+{
+    text-transform: capitalize;
+}
+.header__path.dark a.active
+{
+    color: #7367f0;
+}
+.header__path.dark ol li:last-child
+{
+    color: #b4b7bd;
+}
+.header__path.dark h2
+{
+    color: #d0d2d6;
+    border-right-color: #3b4253;
+}
+.header__path h2
+{
+    font-weight: 500;
+    font-size: 2.4rem;
+    text-transform: capitalize;
+    border-right: 1px solid #d6dce1;
+    padding-right: 1rem;
+    margin-right: 0.8rem;
+}
+.header__path hr
+{
+    transform: rotate(-45deg);
+}
+.header__path ol
+{
+    gap: 0.6rem;
+    display: flex;
+    align-items: center;
+}
+.header__path ol li a.active
+{
+    color: #5e50ee;
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+.header__path ol li:last-child
+{
+    color: #6e6b7b;
+    font-size: 1.4rem;
+}
+.header__settings
+{
+    border-radius: 0.6rem;
+    padding: 1.2rem;
+    background-color: #7367f0;
+    color: #FFF;
+    cursor: pointer;
+}
+.header__settings:hover{
+
+    box-shadow: 0 8px 25px -8px #7367f0
+}
+.products__section
+{
+    max-width: 100%;
+    display: flex;
+    gap: 4rem;
+}
+.products__sections__wrapper
+{
+    max-width: 100%;
+    flex-grow: 1;
+}
+.buy__btn
+{
+    position: fixed;
+    bottom: 5%;
+    box-shadow: 0 1px 20px 1px #ea5455;
+    right: 9rem;
+    background-color: #ea5455;
+    color: #FFF;
+    text-transform: capitalize;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 1.2rem 2.5rem;
+    border-radius: .6rem;
+    font-size: 1.4rem;
+}
+.buy__btn:hover{
+    box-shadow: none;
+}
+/*
+*** media queries ***
+*/
+@media (max-width: 1300px) {
+    .container{
+        margin-left: 0;
+    }
+}
