@@ -1,0 +1,119 @@
+.card{
+    padding: 0 !important;
+    width: 18rem;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(34,41,47,.125);
+    border-radius: 0.428rem;
+    -webkit-transition: all .3s ease-in-out,;
+    transition: all .3s ease-in-out,;
+    -moz-transition: all .3s ease-in-out,;
+    -ms-transition: all .3s ease-in-out,;
+    -o-transition: all .3s ease-in-out,;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    position: relative;
+}
+.card:hover{
+    box-shadow: 0 4px 24px 0 rgba(39, 47, 54, 0.267);
+    transition: all .5s;
+    transform : translateY(-10px);
+}
+.card-img{
+    border-top-left-radius: calc(0.428rem - 1px);
+    border-top-right-radius: calc(0.428rem - 1px);
+    flex-shrink: 0;
+    width: 100%;
+    height: 13rem;
+}
+.product_info ,.description{
+    color: #5e5c5c;
+    white-space: wrap;
+    text-align: left;
+    font-weight: 600;
+    margin-left: 15px;
+    display: -webkit-box;
+    cursor: pointer;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.product_info:hover{
+    color: #7367f0;
+}
+.description{
+    font-weight: 200;
+    
+}
+
+.price-star{
+    display: flex;
+    color: #757575;
+    position: relative;
+
+}
+.price-star h5{
+    margin-left: 20px;
+}
+.price-star h3{
+    right: 10px;
+    top: 5px;
+    font-size: 0.9rem;
+    position: absolute;
+}
+.checked{
+    color: orange;
+}
+.continaer1{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    position: absolute;
+    left: 270px;
+}
+.stylebutton{
+    width: 100%;
+  
+}
+.wishlist ,.view{
+    width: 50%;
+    height: 40px;
+    border: 1px solid transparent;
+}
+.wishlist i {
+  color: red;
+}
+.stylebutton .view{
+    border-color: #7367f0!important;
+    background-color: #7367f0!important;
+    color: white;
+}
+
+.stylebutton .view:hover , .stylebutton .wishlist{
+    cursor: pointer;
+}
+.productContainer{
+    width: 100%;
+    height: 100%;
+}
+
+.inputbox{
+    width: 75%;
+    height: 40px;
+    border: 2px solid #7367f0;
+    margin-left:270px ;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.inputbox:hover{
+    border: 2px solid #7367f0;
+
+
+}

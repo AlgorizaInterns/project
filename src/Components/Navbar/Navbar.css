@@ -1,0 +1,176 @@
+.navbar{
+    position: sticky;
+    top: 0;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin: 10px 50px 10px 300px ;
+    height: 40px;
+    padding: 0.8rem 1rem;
+    display: flex;
+    align-items: center;
+}
+.left-side {
+    display: flex;
+    color: #625f6e;
+    line-height: 1.45;
+    text-decoration: none;
+    font-size:large;
+
+}
+.right-side{
+    position: absolute;
+right: 0;
+display: flex;
+color: #625f6e;
+line-height: 1.45;
+text-decoration: none;
+font-size:large;
+}
+.navbar span:hover{
+    cursor: pointer;
+}
+.star{
+    color: #ff9f43!important;
+}
+.select-fancy {
+    display: inline-block;
+    position: relative;
+    border-radius: 5px;
+    width: 100px;
+    overflow: hidden;
+    box-shadow: inset 0 -2px 5px rgba(255, 255, 255, 0.4);
+   
+}
+  .select-fancy, .select-fancy  {
+    cursor: pointer;
+  }
+  .select-fancy select {
+    box-sizing: content-box;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    text-shadow: 1px 1px rgba(255, 255, 255, 0.7);
+    padding: 6px 0 6px 8px;
+    font-size: 12px;
+    width: 120%;
+    height: 17px;
+    transition: all 1s;
+
+  }
+  .shopping-cart{
+    position: absolute;
+    top: -11px;
+    min-width: 1.429rem;
+    min-height: 1.429rem;
+    border-radius: 50%;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: .786rem;
+    line-height: .786;
+    color: #fff;
+    background-color: #7367f0;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+  .bill{
+    position: absolute;
+    top: -11px;
+    color: #fff;
+    min-width: 1.429rem;
+    min-height: 1.429rem;
+    border-radius: 50%;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: .786rem;
+    line-height: .786;  
+      background-color: #ea5455!important;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  }
+  .avatar{
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      margin-right: 10px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+
+}
+.success{
+  border: 1px solid #fff;
+  padding: 0.25em;
+  border-radius: 10em;
+  background-color: #28c76f;
+  position: absolute;
+  right: 10px;
+  top: 25px;
+  min-height: 1.5em;
+  min-width: 1.5em;
+  line-height: 1;
+  font-size: 25%;
+  font-weight: 700;
+  z-index: 1;
+}
+.name{
+    font-size: small;
+    line-height: .386;  
+    margin-right: 10px;
+    top: -10px;
+    position: relative;
+    text-align: right;
+    font-weight: 600!important;
+  
+}
+.name span{
+  font-weight: 400;
+}
+
+.pathBar {
+  color: #636363;
+  position: absolute;
+  font-weight: 200;
+  font-size: 1rem;
+  line-height: 1.2;
+left: 300px;
+top: 100px;
+cursor:pointer;
+
+
+}
+.title{
+  border-right: 1px solid #c3c8cc;
+  padding-right: 10px;
+  font-size: 1.714rem;
+  font-weight: 400;
+
+}
+ .home {
+  color: #7367f0;
+
+}
+.ecommerce{
+  color: #7367f0;
+  font-weight: 200;
+
+}
+.arrow{
+  color: #636363;
+  left: 700px;
+
+}
