@@ -1,0 +1,32 @@
+.dash-board{
+    background-color:$second_backGround;
+    width: 19.5%;
+    height: 100vh;
+    padding: 1.5rem;
+    .logo{
+       
+        display: flex;
+        
+       
+        .logo-img{
+       
+          img{
+              max-width: 36px;
+              padding-top: .2rem;
+          }
+           
+           
+        }
+        h2{
+           padding-left: .7rem;
+           color: #7367F0;
+        }
+        
+        
+    }
+    .app-pages{
+        margin: 2rem 0 1.2rem;
+    }
+   
+    
+}
