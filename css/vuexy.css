@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600&display=swap');
+/* Start Global Rules */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  /*Because we will use rem Unit so if we use 1.5rem ==> 15px*/
+  font-size: 10px;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f8f8f8;
+}
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  right: 0;
+  margin: 1.3rem auto 0;
+  padding: 11.2px 14px;
+  height: 62.38px;
+  background-color: #FFFFFF;
+  position: fixed;
+  border-radius: 5px;
+  box-shadow: 0 4px 24px 0 rgb(34 41 47 / 10%);
+  width: calc(100vw - (100vw - 100%) - calc(2rem * 2) - 260px);
+  z-index: 12;
+}
+.left-section{
+  display: flex;
+}
+.left-section i{
+  /* padding: 0 15px; */
+  text-decoration: none;
+  color: #6E6B7B;
+}
+.nav-link:hover {
+  color: #7367F0;
+  cursor: pointer;
+}
+.left-section i{
+  padding: 0 7px;
+  width: 34.98px;
+  height: 21.88px;
+}
+.left-section .starIcon{
+  color: #FF9F43;
+}
+.right-section{
+  display: flex;
+  align-items: center;
+}
+.right-section .page-lang{
+  padding: 0 0.5rem;
+}
+.right-section img.flagIcon {
+  margin: 0 5.6px 0 0;
+    font-weight: 500;
+    width: 18.66px;
+    height: 14px;
+}
+.right-section span.lang-selected{
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.right-section i{
+  padding: 0 7px;
+  color: #6E6B7B;
+
+}
+.right-section #avatarIcon{
+  margin-left: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.right-section .username{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  margin: 0 0 6.09px 2.8px ;
+  font-weight: 500;
+}
+
+.right-section .role {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 1.1rem;
+  font-weight: 200;
+}
+.content-area {
+  display: flex;
+  height: calc(100vh - 62px);
+  display: flex;
+  background-color: #f9f9f9;
+}
+aside {
+  height: 100%;
+  width: 260px;
+  background-color: #FFFFFF;
+  overflow-y: auto;  
+  z-index: 900;
+}
+nav{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+  padding-right: 15px;
+}
