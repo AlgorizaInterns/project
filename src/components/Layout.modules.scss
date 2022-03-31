@@ -1,0 +1,108 @@
+@import '../styles/varibles.scss';
+
+.app{
+  // height: 100vh;
+  background-color: $container--light;
+  display: flex;
+  //light
+  color: $text--light;
+
+  .container{
+    background-color: $container--light;
+  }
+  .overlay{
+    position: fixed;
+    top: 0;
+    height: 120vh;
+    width: 100%;
+    z-index: 400;
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    background-color: rgba(34,41,47,.5);
+    transition: all .5s ease;
+    &.show{
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  .comp{
+    background-color: $comp--light;
+  }
+  &__main--content{
+    width: -webkit-fill-available;
+    margin-left: 260px;
+    @include breakpoint(lg){
+      margin-left: 0;
+    }
+    &__down{
+      padding: 0 2rem;
+    }
+  }
+  input[type='radio']:after{
+    background-color: $comp--light;
+  }
+
+  &.dark{
+    
+    //dark
+    color: $text--dark;
+    .container{
+      background-color: $container--dark;
+    }
+    .comp{
+      background-color: $comp--dark;
+      box-shadow: none;
+    }
+    a,h2,h4,p{
+      color: $text--dark;
+    }
+
+    ///////
+    .active{
+      background-color: $container--dark !important; 
+    }
+    .drawer--group h3{
+      color: #676d7d;
+    }
+    input[type='radio']:after{
+      background-color: $comp--dark;
+    }
+    .product__btns__up{
+      background-color: #161d31;
+      color: #fff;
+    }
+    .selector__choices{
+      background-color: $comp--dark;
+      color: #b4b7bd;
+    }
+    .slider > .thumb{
+      background-color: $container--dark;
+    }
+    .product__details__name, .product__details__numbers__price{
+      color: #b4b7bd;
+    }
+    .cart__title > h2{
+      color: #d0d2d6;
+    }
+    .cart > div{
+      border-color: #3b4253;
+    }
+    .item img{
+      background-color: #161d31;
+    }
+    .item__details__control{
+      border-color: #404656;
+    }
+    .item__details__control > span{
+      border-color: #404656;
+    }
+    .item__details__name__title{
+      color: #b4b7bd;
+    }
+    .item__details__control span{
+      border-color: #3b4253;
+    }
+  }
+
+}
