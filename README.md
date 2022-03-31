@@ -1,6 +1,6 @@
 
 
-Sorry for Not Completing the project. I didn't have but less than a day in this whole week. I urgently had to travel and prepare for some important stuff.
+Sorry for Not Completing the whole project. I didn't have but less than a day in this whole week. I urgently had to travel and prepare for some important stuff.
 
 I spent the short available time doing this but , I will continue all requirements after I return which is going to be tomorrow In Shaa Allah.
 
