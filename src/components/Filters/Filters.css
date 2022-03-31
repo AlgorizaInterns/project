@@ -1,0 +1,53 @@
+.filters__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 0 2rem;
+}
+
+.filters__container__title{
+    font-size: 1.2rem;
+}
+
+.filters__container__list{
+    background-color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.8rem;
+    box-shadow: 0 4px 24px 0 rgb(34 41 47 / 10%);
+    border-radius: 0.358rem;
+}
+
+.list__multiRange, .range__container, .filters__container__list p{
+    padding: 0 1rem;
+    width: 100%;
+}
+
+.list__multiRange{
+    display: flex;
+    flex-direction: column;
+}
+
+.list__multiRange input{
+    margin: 0.5rem 0;
+}
+
+.MuiSlider-root {
+    color: #3f51b5;
+    width: 85%;
+    cursor: pointer;
+    height: 2px;
+    display: inline-block;
+    padding: 13px 0;
+    position: relative;
+    box-sizing: content-box;
+    touch-action: none;
+}
+
+@media(max-width: 1198px){
+    .filters__container{
+        display: none;
+    }
+}

@@ -1,0 +1,115 @@
+.listFilter__container__options{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container__options__title{
+    color: #5e5873;
+}
+
+.container__options__btns{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.options__btns__dropdown , .options__btns__display{
+    border: 1px solid #7367f0;
+    background-color: transparent;
+    color: #7367f0;
+    text-align: center;
+    background-color: transparent;
+    border-radius: 0.358rem;
+    font-size: 1rem;
+
+}
+
+.options__btns__dropdown{
+    padding: 0.5rem 1.5rem;
+    margin-right: 2rem;
+
+}
+
+.btns__dropdown__list{
+    margin-top: 3.5rem;
+    position: absolute;
+    background-color: white;
+    border-radius: 0.358rem;
+}
+
+.btns__dropdown__list li{
+    list-style: none;
+    padding: 0.5rem 0.5rem 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+.btns__dropdown__list li:hover, .btn:hover, .btn:active{
+    background-color: #DDDBF6;
+    color: #7367f0;
+}
+.dropdown__container{
+    display: flex;
+    flex-direction: column;
+}
+
+.options__btns__display{
+    padding: 0.35rem
+}
+
+.btns__display__toggler{
+    background-color: transparent;
+    border: none;
+    color: #7367f0;
+    height: 100%;
+}
+
+.tog1 {
+    border-right: 1px solid #7367f0;
+    padding-right: 0.5rem;
+    margin-right: 0.2rem;
+}
+
+.listFilters__container__searchBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    margin-top: 1rem;
+    height: 3rem;
+    border-radius: 0.358rem;
+}
+
+.container__searchBar__input{
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    margin: 0 0.5rem;
+    height: 1.5rem;
+    outline: none;
+}
+
+.container__searchBar__input :active{
+    border: none;
+}
+
+.container__searchBar__input,.icon{
+    color: #5e5873;
+}
+
+.listFilters__container__searchBar, .btns__dropdown__list{
+    box-shadow: 0 4px 24px 0 rgb(34 41 47 / 10%);
+    
+}
+
+@media(max-width: 1198px){
+    .listFilters-container{
+        display: none;
+    }
+}
+
+

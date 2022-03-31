@@ -1,0 +1,121 @@
+.main-dropDownMenu{
+    position:absolute;
+    display: flex;
+    background: var(--dark);
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    /* opacity: ; */
+}
+
+.nav-container{
+    border-radius: 0.428rem;
+    display: flex;
+    flex-basis: 100%;
+    background-color: var(--white);
+    box-shadow: var(--shadow);
+    margin: 4rem 1rem 1rem 1rem;
+    min-height: 2.45rem;
+    padding: 1rem;
+    justify-content: space-between;
+}
+
+.burger-btn, .burger-btn svg, li svg{
+    border: none;
+    background-color: var(--white);
+    color: var(--dark);
+}
+
+.nav-userName{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: 0.8rem;
+    text-align: end;
+}
+
+.nav-userName-sub{
+    font-size: 0.6rem;
+}
+
+@media (min-width: 1198px){
+    .burger-btn{
+        display: none;
+    }
+
+    .nav-container{
+        justify-content: flex-end;
+    }
+}
+
+@media (max-width: 578px){
+    .nav-userName{
+        display: none;
+    }
+
+}
+
+@media (max-width: 578px){
+    .lang-d{
+        margin-right: 11.65rem;
+    }
+
+}
+
+.nav-container-list{
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    list-style: none;
+    /* border: 1px solid green; */
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0;
+
+}
+
+.nav-container-list span, .nav-container-list li p, svg {
+    background-color: var(--white);
+}
+
+.nav-container-list li{
+    /* border: 1px solid red; */
+    margin-left: 1rem;
+    color: var(--dark);
+}
+
+.nav-dropDown-container{
+    margin-top: 3.5rem;
+    position: absolute;
+    background-color: white;
+    border-radius: 0.358rem;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-dropDown-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    margin-top: 11rem;
+}
+
+.nav-dropDown-list li{
+    padding: 0 1rem 0 1rem;
+    width: 100%;
+}
+
+.nav-dropDown-list :hover{
+    background-color:var(--indigo);
+    color: var(--white);
+}
+
+.lang-d{
+    margin-right: 18.65rem;
+}

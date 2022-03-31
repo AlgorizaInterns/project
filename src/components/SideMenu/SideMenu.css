@@ -1,0 +1,49 @@
+.sideMenu-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%
+}
+
+.sideMenu-head{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    width: 100%;
+    /* padding-bottom: 1rem; */
+    z-index: 1
+}
+
+.sideMenu-head-brand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--white);
+}
+
+.sideMenu-head, .head-brand-logo,.head-brand-name,.sideMenu-head-collapseBtn{
+    background: var(--white);
+    color: var(--indigo);
+    font-weight: var(--bolder);
+}
+
+.head-brand-logo{
+    max-width: 36px;
+    margin-right: 1rem;
+}
+
+.sideMenu-head-collapseBtn{
+    border: none;
+}
+
+.sideMenu-list-scroller{
+    overflow-y: scroll;
+    position: fixed;
+    margin-top: 25rem;
+    height: 100vh;
+    /* z-index: 1; */
+    position: fixed;
+}
+

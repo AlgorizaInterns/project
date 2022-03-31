@@ -1,0 +1,31 @@
+.Shop{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.Shop__content{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.Shop__items{
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem 0 0;
+}
+
+.Shop__head__title {
+    margin-left: 1.5rem;
+    /* justify-content: flex-start; */
+    /* justify-self: start; */
+    text-align: left;
+    margin: 2rem;
+}
+
+@media(max-width: 1198px){
+    .display{
+        display: none;
+    }
+}
