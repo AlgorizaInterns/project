@@ -1,11 +1,15 @@
 # frontend-task
 Built with HTML, CSS, JS
 
+### [Live Site](https://project-1kh.pages.dev/)
+
 ## Features
 
 - Search Products by Title
 - Filter Products by Price or Category
 - Toggle Grid - List View
+
+
 
 # Preview
 
