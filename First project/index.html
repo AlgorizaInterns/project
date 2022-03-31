@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vuexy- Vuejs Admin Dashboard Template</title>
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="/style/style.css">
+
+
+</head>
+<body>
+    <div class="container">
+        
+        <aside class="left">
+            <div class="top">
+                <div class="logo">
+                    <img src="assets/logo.svg"/>
+                    <h2>Vuexy</h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">radio_button_unchecked</span>
+                </div>
+            </div>
+            <div class="sidebar">
+                <div>
+                    <div class="section">
+                        <a href="#" class="dash-btn" onclick="myFunction()">
+                            <span class="material-icons-outlined">dashboard</span>
+                            <h3>Dashboard</h3>
+                            <span class="chartsCount">2</span>
+                            <span class="material-icons-outlined arrow">chevron_right</span>
+                        </a>
+                        <div class="sub-items ">
+                            <a href="#">
+                                <span class="material-icons-outlined circle">fiber_manual_record</span>                              
+                                <h3>eCommerce</h3>
+                            </a>
+                            <a href="#">
+                                <span class="material-icons-outlined">fiber_manual_record</span>                              
+                                <h3>Analytics</h3>
+                            </a> 
+                        </div>
+                    </div>
+                
+                    <div class="section">   
+                        <h3 class="text-muted section-head">Apps & Pages</h3>
+                        <a href="#">
+                            <span class="material-icons-outlined ">mail_outline</span>
+                            <h3>Email</h3>
+                        </a>
+                        <a href="#">
+                            <span class="material-icons-outlined">chat_bubble_outline</span>
+                            <h3>Chat</h3>
+                        </a>
+                        <a href="#">
+                            <span class="material-icons-outlined">event_available</span>
+                            <h3>Todo</h3>
+                        </a>
+                        <a href="#">
+                            <span class="material-icons-outlined">calendar_month</span>
+                            <h3>Calendar</h3>
+                        </a>
+                        <div>
+                            <a href="#"><span class="material-icons-outlined">summarize</span>
+                            <h3>Invoice</h3>
+                            <span class="material-icons-outlined second arrow">chevron_right</span>
+                        </a>
+                         <!--       <a href="#">
+                                <span class="material-icons-sharp">radio_button_unchecked</span>
+                                <h3>List</h3>
+                            </a>
+                            <a href="#">
+                                <span class="material-icons-sharp">radio_button_unchecked</span>
+                                <h3>Preview</h3>
+                            </a>
+                            <a href="#">
+                                <span class="material-icons-sharp">radio_button_unchecked</span>
+                                <h3>Edit</h3>
+                            </a>
+                            <a href="#">
+                                <span class="material-icons-sharp">radio_button_unchecked</span>
+                                <h3>Add</h3>
+                            </a> -->
+                        </div>
+                        <div>
+                            <a href="#" onclick="secondFunction()"><span class="material-icons-outlined">shopping_cart</span>
+                            <h3>eCommerce</h3>
+                            <span class="material-icons-outlined arrow-two">chevron_right</span>
+                        </a>
+                                <div class="sub-items-two"> 
+                                    <a href="#" class="active shop-btn">
+                                        <span class="material-icons-outlined">fiber_manual_record</span>                              
+                                        <h3>Shop</h3>
+                                    </a>
+                                    <a href="#">
+                                        <span class="material-icons-outlined">fiber_manual_record</span>                                        
+                                        <h3>Details</h3>
+                                    </a>
+                                    <a href="#">
+                                        <span class="material-icons-outlined">fiber_manual_record</span>                                        
+                                        <h3>Wishlist</h3>
+                                    </a>
+                                    <a href="#">
+                                        <span class="material-icons-outlined">fiber_manual_record</span>                                        
+                                        <h3>Checkout</h3>
+                                    </a>
+                                </div>
+                        </div>
+                        <div>
+                            <a href="#"><span class="material-icons-outlined">person_outline</span>
+                            <h3>User</h3>
+                            <span class="material-icons-outlined fourth arrow">chevron_right</span>
+                        </a>
+                           <!--     <a href="#">
+                                <span class="material-icons-sharp">radio_button_unchecked</span>
+                                <h3>List</h3>
+                            </a>
+                            <a href="#">
+                                <span class="material-icons-sharp">radio_button_unchecked</span>
+                                <h3>View</h3>
+                            </a>
+                            <a href="#">
+                                <span class="material-icons-sharp">radio_button_unchecked</span>
+                                <h3>Edit</h3>
+                            </a> -->
+                        </div>
+                        <div>
+                            <a href="#"> <span class="material-icons-outlined">description</span>
+                            <h3>Pages</h3>
+                            <span class="material-icons-outlined fifth arrow">chevron_right</span>
+                        </a>
+                           <!--  <div>
+                                  <a href="#">  <span class="material-icons-sharp">radio_button_unchecked</span>
+                                    <h3>Authentication</h3>
+                                    <span class="material-icons-outlined  arrow">chevron_right</span>
+                                </a>
+                               <a href="#"> <h3>Login V1</h3></a>
+                                    <a href="#"> <h3>Login V2</h3></a>
+                                    <a href="#"> <h3>Register V1</h3></a>
+                                    <a href="#"> <h3>Register V2</h3></a>
+                                    <a href="#"> <h3>Forgot Password V1</h3></a>
+                                    <a href="#"> <h3>Forgot Password V2</h3></a>
+                                    <a href="#"> <h3>Reset Password V1</h3></a>
+                                    <a href="#"> <h3>Reset Password V2</h3></a> 
+                                </div>
+                            <a href="#">
+                                <span class="material-icons-sharp">radio_button_unchecked</span>
+                                <h3>Account Settings</h3>
+                            </a>
+                            <a href="#">
+                                <span class="material-icons-sharp">radio_button_unchecked</span>
+                                <h3>Profile</h3>
+                            </a>
+                            <a href="#">
+                                <span class="material-icons-sharp">radio_button_unchecked</span>
+                                <h3>Faq</h3>
+                            </a>
+                            <a href="#">
+                                <span class="material-icons-sharp">radio_button_unchecked</span>
+                                <h3>Knowledge Base</h3>
+                            </a>
+                            </a>
+                            <a href="#">
+                                <span class="material-icons-sharp">radio_button_unchecked</span>
+                                <h3>Pricing</h3>
+                            </a> 
+                            <div>
+                               <a href="#">
+                                    <span class="material-icons-sharp">radio_button_unchecked</span>
+                                    <h3>Blog</h3>
+                                    <span class="material-icons-outlined  arrow">chevron_right</span>
+                                </a>
+                                 <a href="#"> <h3>List</h3></a>
+                                <a href="#"> <h3>Detail</h3></a>
+                                <a href="#"> <h3>Edit</h3></a> 
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <span class="material-icons-sharp">radio_button_unchecked</span>
+                                    <h3>Mail Templates</h3>
+                                    <span class="material-icons-outlined  arrow">chevron_right</span>
+                                </a>
+                                  <a href="#"> <h3>Welcome</h3></a>
+                                <a href="#"> <h3>Reset Password</h3></a>
+                                <a href="#"> <h3>Verify Email</h3></a>
+                                <a href="#"> <h3>Deactivate Account</h3></a>
+                                <a href="#"> <h3>Invoice</h3></a>
+                                <a href="#"> <h3>Promotional</h3></a> 
+                            </div>
+                            <div>
+                                <a href="#">
+                                <span class="material-icons-sharp">radio_button_unchecked</span>
+                                <h3>Miscellaneous</h3>
+                                <span class="material-icons-outlined  arrow">chevron_right</span>
+                            </a>
+                                 <a href="#"> <h3>Comming Soon</h3></a>
+                                <a href="#"> <h3>Not Authorized</h3></a>
+                                <a href="#"> <h3>Under Maintenance</h3></a>
+                                <a href="#"> <h3>Error</h3></a> -->
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="section">
+                            <h3 class="text-muted section-head">USER INTERFACE</h3>
+                                   <a href="#">
+                                    <span class="material-icons-outlined">title</span>
+                                        <h3>Typography</h3>
+
+                                    </a>
+                                    <a href="#">
+                                        <span class="material-icons-outlined">palette</span>
+                                        <h3>Colors</h3>
+                                    </a>
+                                    <a href="#">
+                                        <span class="material-icons-outlined">visibility</span>
+                                        <h3>Feather</h3>
+                                    </a>
+                                    <a href="#">
+                                        <span class="material-icons-outlined">credit_card</span>
+                                        <h3>Cards</h3>
+                                        <span class="material-icons-outlined arrow">chevron_right</span>
+                                    </a>
+                                    <a href="#">
+                                        <span class="material-icons-outlined">inventory_2</span>
+                                        <h3>Components</h3>
+                                        <span class="material-icons-outlined arrow">chevron_right</span>
+                                    </a>
+                                    <a href="#">
+                                        <span class="material-icons-outlined">add_box</span>
+                                        <h3>Extensions</h3>
+                                        <span class="material-icons-outlined arrow">chevron_right</span>
+                                    </a>
+                                    <a href="#">
+                                        <span class="material-icons-outlined">space_dashboard</span>
+                                        <h3>Page Layout</h3>
+                                        <span class="material-icons-outlined arrow">chevron_right</span>
+                                    </a>
+
+
+                    </div>
+                    <div class="section">
+                            <h3 class="text-muted section-head">FORMS & TABLES</h3>
+                                   <a href="#">
+                                    <span class="material-icons-outlined">filter_none</span>
+                                    <h3>forms elements</h3>
+                                        <span class="material-icons-outlined arrow">chevron_right</span>
+                                    </a>
+                                    <a href="#">
+                                        <span class="material-icons-outlined">filter_none</span>
+                                        <h3>Forms Layout</h3>
+                                    </a>
+                                    <a href="#">
+                                        <span class="material-icons-outlined">view_in_ar</span>
+                                        <h3>Form Wizard</h3>
+
+                                    </a>
+                                    <a href="#">
+                                        <span class="material-icons-outlined">check_circle</span>
+                                        <h3>Form Validation</h3>
+                                    </a>
+                                    <a href="#">
+                                        <span class="material-icons-outlined">filter_none</span>
+                                        <h3>Form Repeater</h3>
+                                    </a>
+                                    <a href="#">
+                                        <span class="material-icons-outlined">toc</span>
+                                        <h3>BS Table</h3>
+                                    </a>
+                                    <a href="#">
+                                        <span class="material-icons-outlined">grid_view</span>
+                                        <h3>Good Table</h3>
+                                    </a>
+
+
+                    </div>
+                    <div class="section">
+                            <h3 class="text-muted section-head">CHARTS & MAPS</h3>
+                                   <a href="#">
+                                    <span class="material-icons-outlined">pie_chart</span>
+                                        <h3>Charts</h3>
+                                        <span class="chartsCount">3</span>
+                                        <span class="material-icons-outlined arrow">chevron_right</span>
+                                    </a>
+                                    <a href="#">
+                                        <span class="material-icons-outlined">map</span>
+                                        <h3>Leaflet</h3>
+                                    </a>
+
+                    </div>
+                    <div class="section">
+                            <h3 class="text-muted section-head">OTHERS</h3>
+                                   <a href="#">
+                                    <span class="material-icons-outlined">shield</span>
+                                        <h3>Access Control</h3>
+                                    </a>
+                                    <a href="#">
+                                        <span class="material-icons-outlined">menu</span>
+                                        <h3>Menu levels</h3>
+                                        <span class="material-icons-outlined arrow">chevron_right</span>
+                                    </a>
+                                    <a href="#">
+                                        <span class="material-icons-outlined">visibility_off</span>
+                                        <h3>Disabled Menu</h3>
+                                    </a>
+                                    <a href="#">
+                                        <span class="material-icons-outlined">support</span>
+                                        <h3>Raise Support</h3>
+                                    </a>
+                                    <a href="#">
+                                        <span class="material-icons-outlined">description</span>
+                                        <h3>Documentation</h3>
+                                    </a>
+
+                    </div>
+                </div>
+            </aside>
+            
+       
+                        <!------------------------------------------End of Aside--------------------------------------------->
+                            
+
+
+
+                        <main>
+                            <div class="top">
+                                <div class="top-left">
+                            <a href="#"><span class="material-icons-outlined">calendar_month</span></a>
+                            <a href="#"><span class="material-icons-outlined">chat_bubble_outline</span></a>
+                            <a href="#"><span class="material-icons-outlined ">mail_outline</span></a>
+                            <a href="#"><span class="material-icons-outlined">event_available</span></a>
+                            <a href="#"><span class="material-icons-outlined">grade</span></a>   
+                        </div>
+                        <div class="top-right"> 
+                            <a class="profile-photo" href="#"><img src="/assets/english.png"></a>
+                            <a href="#"><h3>English</h3></a>
+                            <a href="#"><span class="material-icons-outlined">dark_mode</span></a>
+                            <a href="#"><span class="material-icons-outlined">search</span></a>
+                           <a href="#"><span class="material-icons-outlined">shopping_cart</span></a>
+                           <a href="#"><span class="material-icons-outlined">notifications</span></a>
+                            <span>5</span>
+                            <a href="#"><span class="material-icons-outlined">notifications</span></a>
+                            <span>6</span>
+                            <div class="profileName"><h3>Jhon Doa</h3><span>Admin</span></div>
+                            <a class="profile-photo" href="#"><img src="/assets/profile.png"></a>
+
+                        </div>
+                        </div>   
+
+                        <div class="shop-section">
+
+                                    <div class="shop-section-top">
+                                    <h2 class="border-right">Shop</h2> 
+                                    <div class="other-content"><span class="material-icons-outlined">dashboard</span>
+                                    <span class="material-icons-outlined">chevron_right</span>
+                                    <h3>eCommerce</h3>
+                                    <span class="material-icons-outlined">chevron_right</span>
+                                    <h3>Shop</h3>
+                                      </div>
+                                     </div>
+                            <div>
+
+
+                                <div class="filters">
+                                    <div>
+                                        <div>
+                                            <div>
+                                                <div class="filter-section">
+                                                    <div>
+                                                        <h2>Filters</h2>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <div class="filter-section">
+                                                            <div>
+                                                                <h2>Multi Range</h2>
+                                                            </div>
+                                                            <ul onclick="fn()">
+                                                                <li>
+                                                                    <span>
+                                                                        <input type="radio" id="value1" name="price-range" checked value="all">
+                                                                        <span>All</span>
+                                                                    </span>
+                                                                </li>
+                                                                <li>
+                                                                    <span>
+                                                                        <input type="radio" id="value2" name="price-range" value="&lt; 10">
+                                                                        <span> &lt;=$10</span>
+                                                                    </span>
+                                                                </li>
+                                                                <li>
+                                                                    <span>
+                                                                        <input type="radio" id="value3" name="price-range" value="10-100">
+                                                                        <span>$10 - $100</span>
+                                                                    </span>
+                                                                </li>
+                                                                <li>
+                                                                    <span>
+                                                                        <input type="radio" id="value4" name="price-range" value="100-500">
+                                                                        <span>$100 - $500</span>
+                                                                    </span>
+                                                                </li>
+                                                                <li>
+                                                                    <span>
+                                                                        <input type="radio" id="value5" name="price-range" value="&gt; 500">
+                                                                        <span>&gt;= $500</span>
+                                                                    </span>
+                                                                </li>
+                        
+                                                            </ul>
+                                                        </div>
+                                                        <div class="filter-section">
+                                                            <div>
+                                                                <h2>Categories</h2>
+                                                            </div>
+                                                            <ul>
+                                                                <li>
+                                                                    <span>
+                                                                        <input type="radio" name="category-filter" value="false" checked>
+                                                                        <span>Appliances</span>
+                                                                    </span>
+                                                                </li>
+                                                                <li>
+                                                                    <span>
+                                                                        <input type="radio" name="category-filter" value="false">
+                                                                        <span> Audio</span>
+                                                                    </span>
+                                                                </li>
+                                                                <li>
+                                                                    <span>
+                                                                        <input type="radio" name="category-filter" value="false">
+                                                                        <span>Cameras & Camcorders</span>
+                                                                    </span>
+                                                                </li>
+                                                                <li>
+                                                                    <span>
+                                                                        <input type="radio" name="category-filter" value="false">
+                                                                        <span>Car Electronics & GPS</span>
+                                                                    </span>
+                                                                </li>
+                                                                <li>
+                                                                    <span>
+                                                                        <input type="radio" name="category-filter" value="false">
+                                                                        <span class="ml-50">Cell Phones</span>
+                                                                    </span>
+                                                                </li>
+                                                                <li>
+                                                                    <span>
+                                                                        <input type="radio" name="category-filter" value="false">
+                                                                        <span>Computers & Tablets</span>
+                                                                    </span>
+                                                                </li>
+                                                                <li>
+                                                                    <span>
+                                                                        <input type="radio" name="category-filter" value="false">
+                                                                        <span> Health, Fitness & Beauty</span>
+                                                                    </span>
+                                                                </li>
+                                                                <li>
+                                                                    <span>
+                                                                        <input type="radio" name="category-filter" value="false">
+                                                                        <span>Office & School Supplies</span>
+                                                                    </span>
+                                                                </li>
+                                                                <li>
+                                                                    <span>
+                                                                        <input type="radio" name="category-filter" value="false">
+                                                                        <span>TV & Home Theater</span>
+                                                                    </span>
+                                                                </li>
+                                                                <li>
+                                                                    <span>
+                                                                        <input type="radio" name="category-filter" value="false">
+                                                                        <span>Video Games</span>
+                                                                    </span>
+                                                                </li>
+                        
+                                                            </ul>
+                                                        </div>
+                                                        <div>
+                                                            <div class="filter-section">
+                                                                <h2  >Brands</h2>
+                                                            </div>
+                                                            <div>
+                                                                <ul>
+                                                                    <li>
+                                                                        <span>
+                                                                            <input type="checkbox" value="false">
+                                                                            <span>Insignia™</span>
+                                                                        </span>
+                                                                        <span>746</span>
+                                                                        
+                                                                    </li>
+                                                                    <li  >
+                                                                        <span>
+                                                                            <input type="checkbox" value="false">
+                                                                            <span>
+                                                                                Samsung
+                                                                            </span>
+                                                                        </span>
+                                                                        <span>633</span>
+                                                                    </li>
+                                                                    <li  >
+                                                                        <span>
+                                                                            <input type="checkbox" value="false">
+                                                                            <span>
+                                                                                Metra
+                                                                            </span>
+                                                                        </span>
+                                                                        <span>591</span>
+                                                                    </li>
+                                                                    <li  >
+                                                                        <span>
+                                                                            <input type="checkbox" value="false">
+                                                                            <span>HP</span>
+                                                                        </span>
+                                                                        <span>530</span>
+                                                                    </li>
+                                                                    <li  >
+                                                                        <span>
+                                                                            <input type="checkbox" value="false">
+                                                                            <span>Apple</span>
+                                                                        </span>
+                                                                        <span>442</span>
+                                                                    </li>
+                                                                    <li  >
+                                                                        <span>
+                                                                            <input type="checkbox" value="false">
+                                                                            <span>GE</span>
+                                                                        </span>
+                                                                        <span>394</span>
+                                                                    </li>
+                                                                    <li  >
+                                                                        <span>
+                                                                            <input type="checkbox" value="false">
+                                                                            <span>Sony</span>
+                                                                        </span>
+                                                                        <span>350</span>
+                                                                    </li>
+                                                                    <li  >
+                                                                        <span>
+                                                                            <input type="checkbox" value="false">
+                                                                            <span>Incipio</span>
+                                                                        </span>
+                                                                        <span>320</span>
+                                                                    </li>
+                                                                    <li  >
+                                                                        <span>
+                                                                            <input type="checkbox" value="false">
+                                                                            <span>KitchenAid</span>
+                                                                        </span>
+                                                                        <span>318</span>
+                                                                    </li>
+                                                                    <li  >
+                                                                        <span>
+                                                                            <input type="checkbox" value="false">
+                                                                            <span>Whirlpool</span>
+                                                                        </span>
+                                                                        <span>298</span>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                </section> 
+                                <div class="shopItems">
+                                    <div ><p id="itemsLength"></p></div>
+                                    <div id="searchWrapper">
+                                        <input
+                                            type="text"
+                                            name="searchBar"
+                                            id="searchBar"
+                                            placeholder="Search Product"
+                                            />
+                                    </div>
+                                    <div id="itemsList"></div>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                        
+                        </main>
+        </div>
+    <script src="/script/app.js"></script>
+
+</body>
+</html>
