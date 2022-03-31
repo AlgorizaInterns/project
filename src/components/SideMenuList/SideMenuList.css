@@ -1,0 +1,27 @@
+.sideMenu-list-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: column nowrap;
+    /* overflow-y: scroll; */
+    background: var(--white);
+}
+
+.sideNav-list-dashboard{
+    padding-right: 8rem;
+    padding-left: 0;
+    border: none;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background: var(--white);
+}
+
+.sideNav-list-dashboard :hover{
+    background: var(--indigo);
+    color: var(--white);
+    font-weight: bold;
+}
+
+.icon{
+    background-color: var(--white);
+}

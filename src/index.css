@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Montserrat:wght@300&family=Open+Sans&family=Oxygen:wght@700&display=swap');
+
+:root {
+  --blue: #00cfe8;
+  --indigo: #6610f2;
+  --purple: #7367f0;
+  --pink: #e83e8c;
+  --red: #ea5455;
+  --orange: #ff9f43;
+  --yellow: #ffc107;
+  --green: #28c76f;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #b8c2cc;
+  --gray-dark: #1e1e1e;
+  --primary: #7367f0;
+  --secondary: #82868b;
+  --success: #28c76f;
+  --info: #00cfe8;
+  --warning: #ff9f43;
+  --danger: #ea5455;
+  --light: #f6f6f6;
+  --dark: #4b4b4b;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: "Montserrat",Helvetica,Arial,serif;
+  --font-family-monospace: "Montserrat",Helvetica,Arial,serif;
+  --bolder: 700;
+  --shadow: 0 4px 24px 0 var(--dark);
+}
+
+*{
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  background-color: var(--light);
+}
+
+.hidden {
+  display: none;
+}
+
+.bolder{
+  font-weight: var(--bolder);
+}
+
+.bg-none{
+  background: none;
+}
+
+span{
+  background: none;
+}
+
+svg{
+  background: none;
+}
+
+
+
+
+

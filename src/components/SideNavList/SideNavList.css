@@ -1,0 +1,53 @@
+.sideNav__container__head{
+    position: relative;
+}
+
+.sideNav__list{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sideNav__list, .sideNav__list__sub, .sideNav__list__scoll{
+    margin: 0;
+    padding: 0
+}
+
+.sideNav__list__scoll{
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.sideNav__list__sub li, .sub__dropdown__list li{ 
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 0;
+}
+
+/* .sideNav__list__sub li:hover{ 
+    background-color: #DDDBF6;
+    color: #7367f0;
+} */
+
+.icon{
+    margin-right: 0.8rem;
+}
+.icon:hover, svg, .sideNav__list__sub li:hover span, .sideNav__list__sub li:hover{
+    background: var(--indigo);
+    font-weight: bold;
+}
+
+svg{
+    background: none;
+}
+
+.list__sub__button {
+    border: none;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.05rem;
+}
