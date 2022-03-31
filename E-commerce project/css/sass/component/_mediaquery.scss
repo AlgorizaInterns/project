@@ -1,0 +1,30 @@
+@media all and (max-width:767px){
+nav{
+    background-color: gold;
+    
+        ul{
+          #iconDashboard{
+              display: block;
+          }  
+        }
+    
+}
+}
+@media (min-width:768px) and (max-width:991px){
+    nav {
+        ul{
+          #iconDashboard{
+              display: block;
+          }  
+        }
+    }
+}
+@media (min-width:992px) and (max-width:1200px){
+    nav {
+        ul{
+          #iconDashboard{
+              display: block;
+          }  
+        }
+    }
+}
