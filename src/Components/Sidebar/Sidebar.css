@@ -1,0 +1,142 @@
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 270px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    text-align: left;
+    font-size: 1.1rem;
+    font-family: Montserrat,Helvetica,Arial,serif;
+    font-weight: 400;
+    box-shadow: 0 0 15px 0 rgb(34 41 47 / 5%);
+overflow-x: hidden;
+  }
+  
+  .sidebar li  {
+    display: block;
+    color: #625f6e;
+    line-height: 1.45;
+    padding: 14px;
+    text-decoration: none;
+    
+  }
+  .text{
+    color: #7367f0;
+    letter-spacing: .01rem;
+    font-size: 1.45rem;
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.60em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 10px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+  }
+ 
+  label{
+    font-family:Helvetica,Arial,serif;
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: .9rem;
+    text-transform: uppercase;
+    color: #a6a4b0;
+    line-height: 1.5;
+    letter-spacing: .01rem;
+    margin-left: 25px;
+  }
+  .logo-text{
+    height: 100%;
+    width: 260px;
+    height: 4.45rem;
+    position: relative;
+    left: 50px;
+    display: flex;
+}
+.logo-text:hover{
+  cursor: pointer;
+}
+.logo{
+  width: 50px;
+  height: 50px;
+}
+  .sidebar li:hover {
+    cursor: pointer;
+    animation:  1s infinite;
+    transform: scale(.9);
+    transition: .3s;
+    
+} 
+ul:hover{
+  cursor: pointer;
+  animation:  1s infinite;
+  transform: scale(0.9);
+  transition: .5s;
+ 
+}
+i{
+  margin: 0 15px;
+}
+ 
+ 
+  
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar li {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar li {
+      text-align: left;
+      float: none;
+    }
+  }
+ 
+  
+  .collapsable-menu ul {
+    list-style-type: none;
+    padding: 0;
+  }
+ 
+
+  
+  .collapsable-menu label {
+      display: block;
+      cursor: pointer;
+   
+  }
+  
+  .menu-content {
+      max-height: 0;
+      overflow: hidden;
+      font-family: 'Oswald', sans-serif; 
+      padding: 0;
+  }
+  
+  
+ 
+  input:checked ~ .menu-content {
+      max-height: 100%;
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background:  #dadada;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background:  #959499;
+     border-radius: 25px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background:  #625f6e;
+  }
