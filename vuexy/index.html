@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vuexy</title>
+  <link href="" rel="icon">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;500&family=Cookie&family=Fira+Sans:wght@500&family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans&family=Outfit:wght@700&family=Poppins:wght@100;400;500&family=Roboto:ital,wght@0,400;0,900;1,400&family=Satisfy&family=Shippori+Antique+B1&family=Source+Sans+Pro:ital,wght@0,400;1,600&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <header id="pageHeader" class="pageHeader">
+    <div class="header">
+      <ul class="icons">
+        <li  id="bar" onclick="toggle()"><i class="fa-solid fa-bars bar"></i></li>
+        <li><i class="fa-solid fa-calendar nonbar"></i></li>
+        <li><i class="fa-solid fa-message nonbar"></i></li>
+        <li><i class="fa-solid fa-envelope nonbar"></i></li>
+        <li><i class="fa-solid fa-list-check nonbar"></i></li>
+        <li><i class="rating__star far fa-star nonbar"></i></li>
+      </ul>
+
+      <ul class="navItem">
+        <li class="flag"><img src="img/amrican flag.jpg"><span>English</span></li>
+        <li><li><img class="dark-themes" id="icon" src="img/moon.png"></i></li>
+        <li><i class="fa-solid fa-magnifying-glass"></i></li>
+        <li><i class="fa-solid fa-cart-shopping"></i></li>
+        <li><i class="fa-solid fa-bell"></i></li>
+        <li class="admininfo"><span class="adminname">Joun Doe</span><br><span class="admintype">admin</span></li>
+        <li class="admin"><img src="img/man.png"></li>
+      </ul>
+    </div>
+  </header>
+
+  <aside id="mainaside" class="mainaside">
+    <div class="navhead">
+      <ul class='header'>
+        <li class="logo row"><img src="/img/favicon.png"><h2 class="brand-text"> Vuexy </h2></li>
+        <li id="point"  onclick="toggle()"><i class="fa-solid fa-circle-dot"></i></li>
+      </ul>
+    </div>
+    <div  class="listItem">
+      <ul>
+
+        <a><li>
+            <div class="flex">
+                <div><i class="fa-solid fa-house"></i><span>Dashboards</span></div>
+                <div><span class="two">2</span></div>
+                <div><i class="fa-solid fa-angle-right"></i></div>
+            </div>
+        </li></a>
+        
+
+        <p class="listHead">APPS & PAGES</p>
+        <a><li><i class="fa-solid fa-envelope"></i><span>Email</span></li></a>
+        <a><li><i class="fa-solid fa-message"></i><span>Chat</span></li></a>
+        <a><li><i class="fa-solid fa-clipboard-check"></i><span>Todo</span></li></a>
+        <a><li><i class="fa-solid fa-calendar"></i><span>Calender</span></li></a>
+
+
+        <a><li>
+            <div class="flex">
+                <div><i class="fa-solid fa-file-lines"></i><span>Invoice</span></div>
+                <div><i class="fa-solid fa-angle-right"></i></div>
+            </div>
+        </li></a>
+
+          <a><li>
+            <button type="button" class="collapsible">
+              <div class="flex">
+                  <div><i class="fa-solid fa-cart-shopping"></i><span>eCommerce</span></div>
+                  <div><i class="fa-solid fa-angle-right"></i></div>
+              </div>
+            </button>
+              <div class="content">
+                <p><button type="button" class="collapsible btn-seclect"><i class="fa-regular fa-circle"></i>Shop</button></p>
+                <p><button type="button" class="collapsible"><i class="fa-regular fa-circle"></i>Details</button></p>
+                <p><button type="button" class="collapsible"><i class="fa-regular fa-circle"></i>Wishlist</button></p>
+                <p><button type="button" class="collapsible"><i class="fa-regular fa-circle"></i>Checkout</button></p>
+              </div>
+          </li></a>
+
+
+
+          <a><li>
+            <div class="flex" ><div><i class="fa-solid fa-file"></i><span>Pages</span></div><div><i class="fa-solid fa-angle-right"></i></div></div>
+          </li></a>
+          
+      
+        <p class="listHead">USER INTERFACE</p>
+        <a><li><i class="fa-solid fa-t"></i><span>Typography</span></li></a>
+        <a><li><i class="fa-solid fa-droplet"></i><span>Colors</span></li></a>
+        <a><li><i class="fa-solid fa-feather-pointed"></i><span>Feather</span></li></a>
+        <a><li><i class="fa-solid fa-clone"></i><span>Components</span></li></a>
+        <a><li><i class="fa-solid fa-circle-plus"></i><span>Extention</span></li></a>
+        <a><li><i class="fa-solid fa-pager"></i><span>Page Layout</span></li></a>
+        <p class="listHead">FORMS & TABLES</p>
+        <a><li class="flex"><div><i class="fa-solid fa-clone"></i><span>Forms Elements</span></div><div><i class="fa-solid fa-angle-right"></i></div></li></a>
+        <a><li><i class="fa-solid fa-clone"></i><span>Forms Layouts</span></li></a>
+        <a><li><i class="fa-solid fa-cube"></i><span>Froms Wizard</span></li></a>
+        <a><li><i class="fa-solid fa-circle-check"></i><span>Forms Validation</span></li></a>
+        <a><li><i class="fa-solid fa-clone"></i><span>Forms Repeater</span></li></a>
+        <a><li><i class="fa-solid fa-table-columns"></i><span>Bs Table</span></li></a>
+        <a><li><i class="fa-solid fa-table-cells-large"></i><span>Good Table</span></li></a>
+        <p class="listHead">CHARTS & MAPS</p>
+        <a><li class="flex"><div><i class="fa-solid fa-clock"></i><span>Charts</span></div><div>3</div><div><i class="fa-solid fa-angle-right"></i></div></li></a>
+        <a><li><i class="fa-solid fa-map"></i><span>Leaflet</span></li></a>
+        <p class="listHead">OTHERS</p>
+        <a><li><i class="fa-solid fa-shield-halved"></i><span>Acess Control</span></li></a>
+        <a><li class="flex"><div><i class="fa-solid fa-bars"></i><span>Menue Levels</span></div><div><i class="fa-solid fa-angle-right"></i></div></li></a>
+        <a disabled><li><i class="fa-solid fa-eye-slash"></i><span>Disable Menu</span></li></a>
+        <a><li><i class="fa-solid fa-futbol"></i><span>Rais Support</span></li></a>
+        <a><li><i class="fa-solid fa-file"></i><span>Documentaion</span></li></a>
+      </ul>
+      </div>
+  </aside>
+  
+  <div class="Container" id="Container">
+  <article id="mainArticle" class="mainArticle">
+    <div class="head first">
+      <div class="flex">
+        <div class="row">
+          <h6>27 results found</h6>
+        </div>
+        <div class="row">
+
+          <button class="btn me-5" id="feature">Feature<i class="fa-solid fa-angle-down"></i></button>
+          <button class="btn "><i class="fa-solid fa-list-ul" id="cards"></i></button>
+          <button class="btn me-5"><i  class="fa-solid fa-rectangle-list"></i></button>
+          
+        </div>
+      </div>
+      </div>
+      <section class="products">
+        <input onkeyup="searchProduct(this.value);" class="search" placeholder="Search product" type="text" id="searchInput">
+
+        <div id="productlist" class="card">
+        </div>
+          <div class="clearFix"></div>
+          <div class="pagination">
+            <a>&laquo;</a>
+            <a class="active">1</a>
+            <a>2</a>
+            <a>3</a>
+            <a href="#">&raquo;</a>
+          </div>
+          <!-- <div id="productlist2">
+            <div class="flex productList2">
+              <div><img src="img/man.png"></div>
+              <div>
+                <h6>Lorem, ipsum dolor.</h6>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+              </div>
+              <div>
+                <div class="center">555</div>
+                <div>
+                  <button class="Btn btn1"><i class="fa-solid fa-heart"></i><span>Wishlist</span></button>
+                  <button class="Btn btn2"><i class="fa-solid fa-cart-shopping"></i><span>view in card</span></button>
+                </div>
+              </div>
+            </div>
+          </div> -->
+      </section>
+  </article>
+
+  <section id="list">
+    <h6>Filters</h6>
+    <div class="list">
+    <h6>Multi Range</h6>
+    <label class="container">All
+      <input type="radio" name="radio2" checked="checked">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container"> = $10
+      <input type="radio" name="radio2">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">$10 - $100
+      <input type="radio" name="radio2">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">$100 - $500
+      <input type="radio" name="radio2">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container mb-5">>= $500
+      <input type="radio" name="radio2">
+      <span class="checkmark"></span>
+    </label>
+
+    <h6>Price Range</h6>
+    <div class="wrapper">
+      <div class="values">
+          <span id="range1"></span>
+          <span id="range2"></span>
+      </div>
+      <div>
+          <div class="slider-track"></div>
+          <input type="range" min="0" max="100" value="30" id="slider-1" oninput="slideOne()">
+          <input type="range" min="0" max="100" value="70" id="slider-2" oninput="slideTwo()">
+      </div>
+  </div>
+
+
+    <h6>Categories</h6>
+    <label class="container">Appliances
+      <input type="radio" checked="checked" name="radio3">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">Audio
+      <input type="radio" name="radio3">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">Cameras & Camcorders
+      <input type="radio" name="radio3">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">Car Electronics & GPS
+      <input type="radio" name="radio3">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">Cell Phones
+      <input type="radio" name="radio3">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">Computers & Tablets
+      <input type="radio" name="radio3">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">Health, Fitness & Beauty
+      <input type="radio" name="radio3">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">Health, Fitness & Beauty
+      <input type="radio" name="radio3">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">Office & School Supplies
+      <input type="radio" name="radio3">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">TV & Home Theater
+      <input type="radio" name="radio3">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container mb-5">Video Games
+      <input type="radio" name="radio3">
+      <span class="checkmark"></span>
+    </label>
+
+    <h6>Brands</h6>
+    <label class="container">Insignia™
+      <input type="radio" name="radio4" checked="che">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">Samsung
+      <input type="radio" name="radio4">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">Metra
+      <input type="radio" name="radio4">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">HP
+      <input type="radio" name="radio4">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">Apple
+      <input type="radio" name="radio4">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">GE
+      <input type="radio" name="radio4">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">Sony
+      <input type="radio" name="radio4">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">Incipio
+      <input type="radio" name="radio4">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">KitchenAid
+      <input type="radio" name="radio4">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container mb-5">Whirlpool
+      <input type="radio" name="radio4">
+      <span class="checkmark"></span>
+    </label>
+
+    <h6>Ratings</h6>
+      <div class="flex"><div><i class="fa-solid fa-star star yellowStar"></i><i class="fa-solid fa-star star yellowStar"></i><i class="fa-solid fa-star star yellowStar"></i><i class="fa-solid fa-star star yellowStar"></i><i class="fa-solid fa-star star"></i><a>&up</a></div><div>160</div></div>
+      <div class="flex"><div><i class="fa-solid fa-star star yellowStar"></i><i class="fa-solid fa-star star yellowStar"></i><i class="fa-solid fa-star star yellowStar"></i><i class="fa-solid fa-star star"></i><i class="fa-solid fa-star star"></i><a>&up</a></div><div>176</div></div>
+      <div class="flex"><div><i class="fa-solid fa-star star yellowStar"></i><i class="fa-solid fa-star star yellowStar"></i><i class="fa-solid fa-star star"></i><i class="fa-solid fa-star star"></i><i class="fa-solid fa-star star"></i><a>&up</a></div><div>291</div></div>
+      <div class="flex"><div><i class="fa-solid fa-star star yellowStar"></i><i class="fa-solid fa-star star"></i><i class="fa-solid fa-star star"></i><i class="fa-solid fa-star star"></i><i class="fa-solid fa-star star"></i><a>&up</a></div><div>190</div></div>
+  </div>
+  </section>
+
+  <di id="pagearea" class="pagearea">
+    <div class="head">
+      <div class="flex">
+        <div class="row">
+          <h2>Shop </h2><a class="hr">|</a><a></a><i class="fa-solid home fa-house"></i><i class="fa-solid fa-angle-right"></i><a>eCommerce</a><i class="fa-solid fa-angle-right"></i><span>Shop</span>
+        </div>
+        <div class="setting">
+          <a><i class="fa-solid fa-gear"></i></a>
+        </div>
+      </div>
+    </div>
+  </di>
+
+  <footer id="pageFooter" class="flex mb-5">
+    <div><span>COPYRIGHT © 2022 Pixinvent, All rights Reserved</span></div>
+    <div><span>Hand-crafted & Made with <span><i class="fa-solid fa-heart"></i></span></span></div>
+  </footer>
+  </div>
+  
+ 
+
+  
+
+<div><button class="btn-danger">Buy Now</button></div>
+<div><button class="btn-setting "><i class="fa-solid fa-gear fa-spin"></i></button></div>
+
+
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
