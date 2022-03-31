@@ -1,4 +1,11 @@
 # frontend-task
+Built with HTML, CSS, JS
+
+## Features
+
+- Search Products by Title
+- Filter Products by Price or Category
+- Toggle Grid - List View
 
 # Preview
 
