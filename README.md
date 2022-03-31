@@ -1,3 +1,11 @@
+
+
+Sorry for Not Completing the project. I didn't have but less than a day in this whole week. I urgently had to travel and prepare for some important stuff.
+
+I spent the short available time doing this but , I will continue all requirements after I return which is going to be tomorrow In Shaa Allah.
+
+Thanks
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
