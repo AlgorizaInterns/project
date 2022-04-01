@@ -419,9 +419,10 @@ const productResult = [{
 ];
 
 const productLength = productResult.length;
+let data = ``;
 
 function showData(list) {
-    let data = '';
+    let data = ``;
     for (let i = 0; i < list.length; i++) {
         data += `
                 <div class="card" id="card">
@@ -455,7 +456,7 @@ function showData(list) {
 
                 `;
     }
-    const element = document.getElementById("shopDescriptionContent");
+    var element = document.getElementById("shopDescriptionContent");
     element.innerHTML = '';
     // debugger
 
@@ -473,62 +474,9 @@ function changeHeart() {
 
 /*---------------------- [ Filtered Search ] --------------------------*/
 
-// function searchFilteredFunction(memo) {
-//     for (var i = 0; i < productLength; i++) {
-//         if (productResult[i].name.toLowerCase().includes(memo.toLowerCase()) == true) {
-//             data += `
-//                 <div class="card" id="card">
-//                     <div class="image" id="card-image">
-//                         <img src="${productResult[i].img}" alt="${productResult[i].name}" />
-//                     </div>
-//                     <div class="card-info" id="card-info">
-//                         <div class="card-info-first">
-//                             <div>`;
-//             for (let x = 0; x < 5; x++) {
-//                 if (x < productResult[i].rating) {
-//                     data += `<i class="fas fa-star"></i>`;
-//                 } else {
-//                     data += `<i class="far fa-star"></i>`;
-//                 }
-//             }
-//             data += `
-//                             </div>
-//                             <span>${productResult[i].price}</span>
-//                         </div>
-//                         <div class="card-info-second">
-//                             <h3>${productResult[i].name}</h3>
-//                             <p>${productResult[i].discription}</p>
-//                         </div>
-//                     </div>
-//                     <div class="card-link" id="card-link">
-//                             <button id="card-link-btn"><i class="fas fa-heart" id="heart-icon" onclick="changeHeart()"></i> Washlist</button>`;
-//             data += `<button><i class="fas fa-cart-arrow-down"></i> View In Cart</button>
-//                     </div>
-//                 </div>
-//                 `;
-//         } else {
-//             console.log("errorrrrrrrrrrrrrrrrrr");
-//         }
-//     }
-//     document.getElementById("shopDescriptionContent").innerHTML = data;
-// }
-
-
-
-// let searchFilter = document.getElementById('searchFilter');
-// let searchFilteredResult = document.getElementById("searchFilteredResult");
-// let searchFilterValue = searchFilter.value;
-// let searchFilteredResultValue = searchFilteredResult.value;
-
-let searchProduct = [];
-
-// searchFilter.onkeyup = 
 function searchFilteredFunction(searchValue) {
-
+    let searchProduct = [];
     for (var i = 0; i < productLength; i++) {
-        // console.log(productResult[i].name.toLowerCase());
-        // console.log(searchFilterValue.toLowerCase());
-        // console.log(productResult[i].name.toLowerCase().includes(searchFilterValue.toLowerCase()));
         if (productResult[i].name.toLowerCase().includes(searchValue.toLowerCase())) {
             console.log("tttt");
             searchProduct.push(productResult[i]);
@@ -537,7 +485,6 @@ function searchFilteredFunction(searchValue) {
             console.log("errorrrrrrrrrrrrrrrrrrrrr");
         }
     }
-    // document.getElementById("shopDescriptionContent").innerHTML = data;
     showData(searchProduct);
 }
 
@@ -634,7 +581,6 @@ document.getElementById('sony').onclick = () => {
 /*---------------------- [ Sorting Card ] --------------------------*/
 
 let low = document.getElementById('lowest');
-
 low.onclick = function sortLowest() {
     var ascending = productResult.sort((cardOne, cardTwo) => parseFloat(cardOne.price) - parseFloat(cardTwo.price));
     console.log("yes");
@@ -643,7 +589,7 @@ low.onclick = function sortLowest() {
 
     data += `${productResult.sort((cardOne, cardTwo) => parseFloat(cardOne.price) - parseFloat(cardTwo.price))}`;
     document.getElementById("shopDescriptionContent").innerHTML = data;
-
+    showData(productResult);
 }
 
 
@@ -652,6 +598,9 @@ high.onclick = () => {
     var descending = productResult.sort((cardOne, cardTwo) => parseFloat(cardTwo.price) - parseFloat(cardOne.price));
     console.log("yes");
     console.log(descending);
+    data += `${productResult.sort((cardOne, cardTwo) => parseFloat(cardTwo.price) - parseFloat(cardOne.price))}`;
+    document.getElementById("shopDescriptionContent").innerHTML = data;
+    showData(productResult);
 }
 
 
@@ -689,7 +638,7 @@ landscapeBtn.onclick = () => {
     document.getElementById("card-image").classList.add('image-landscape');
     document.getElementById("card-info").classList.add('card-info-landscape');
     document.getElementById("card-link").classList.add('card-link-landscape');
-    let data = ``;
+    let data = '';
     for (let i = 0; i < productLength; i++) {
         data += `
         <div class="card card-landscape" id="card">
@@ -733,7 +682,7 @@ portraitBtn.onclick = () => {
     document.getElementById("card-image").classList.remove('image-landscape');
     document.getElementById("card-info").classList.remove('card-info-landscape');
     document.getElementById("card-link").classList.remove('card-link-landscape');
-    showData();
+    showData(productResult);
 }
 
 /*---------------------- [ Setting Box ] --------------------------*/
