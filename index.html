@@ -19,8 +19,8 @@
                     <img src="images/logo.36f34a9f.svg" alt="logoImage" />
                     <h2>Vuexy</h2>
                 </a>
-                <i class="far fa-dot-circle"></i>
-                <!-- <button class="sideNavToggle"><i class="fas fa-bars"></i></button> -->
+                <i class="circle far fa-dot-circle"></i>
+                <i class="close fas fa-times"></i>
             </li>
             <li class="dashboardDropDown dropDown">
                 <div onclick="dashboardDropDown()" class="ddClickable" id="dbddClickable">
@@ -657,6 +657,11 @@
                     <div class="searchBar">
                         <div class="searchHeader">
                             <div class="left">
+                                <button class="toggle-menu-two">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </button>
                                 <p><span>27</span> results found</p>
                             </div>
                             <div class="right">
@@ -890,11 +895,7 @@
         </div>
 
         <!-- Search Filtered -->
-        <ul id="searchFilteredResult" class="searchFiltere-list">
-            <!-- <li>
-                <h3>Loading...</h3>
-            </li> -->
-        </ul>
+        <ul id="searchFilteredResult" class="searchFiltere-list"></ul>
 
         <!-- Start Button Up -->
         <button class="btn-up">
