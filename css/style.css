@@ -1227,6 +1227,15 @@ nav .right-nav i:nth-child(1) {
     padding-left: 10px;
 }
 
+.closefilter {
+    color: #7367f0;
+    margin: auto;
+    margin-top: 5px;
+    display: none;
+    position: absolute;
+    right: 40px;
+}
+
 .filters h3 {
     font-size: 1em;
     font-weight: 400;
