@@ -83,6 +83,10 @@ body {
     margin-top: 10px;
 }
 
+.close {
+    display: none;
+}
+
 .sideNavToggle {
     display: none;
 }
@@ -1460,6 +1464,9 @@ nav .right-nav i:nth-child(1) {
 .searchHeader .left {
     float: left;
     margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .searchHeader .left p {
@@ -2084,7 +2091,8 @@ body::-webkit-scrollbar-thumb:hover,
 
 /*-----------[ Toggle Menu ]------------ */
 
-.toggle-menu {
+.toggle-menu,
+.toggle-menu-two {
     background: none;
     border: none;
     width: 30px;
@@ -2094,11 +2102,18 @@ body::-webkit-scrollbar-thumb:hover,
     position: relative;
 }
 
-.toggle-menu:focus {
+.toggle-menu-two {
+    margin-top: 0px;
+    margin-right: 20px;
+}
+
+.toggle-menu:focus,
+.toggle-menu-two:focus {
     outline: none;
 }
 
-.toggle-menu span {
+.toggle-menu span,
+.toggle-menu-two span {
     display: block;
     height: 4px;
     margin-bottom: 3px;
@@ -2113,8 +2128,9 @@ body::-webkit-scrollbar-thumb:hover,
         display: none;
     }
     .dashboard {
-        left: -200px;
+        left: -250px;
         z-index: 100000;
+        width: 30%;
     }
     .toggle-menu {
         display: inline-block;
@@ -2174,16 +2190,30 @@ body::-webkit-scrollbar-thumb:hover,
 @media (max-width:991px) {
     nav .right-nav {
         width: 50%;
-        margin-left: 371px;
+        margin-left: 275px;
     }
-    nav .left-nav {
+    nav .left-nav .tooltip,
+    nav .left-nav i {
         display: none;
     }
     nav .right-nav i {
         padding: 10px;
     }
+    nav .right-nav .trans {
+        margin-left: -40px;
+    }
+    .toggle-menu-two {
+        display: inline-block;
+    }
+    .notification-link .notifi-number {
+        top: 30px;
+        right: 190px;
+    }
     .filters {
-        left: -250px;
+        left: -290px;
+        z-index: 15000;
+        top: -177px;
+        width: 38%;
     }
     .shopDescription {
         width: 100%;
