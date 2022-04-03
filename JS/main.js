@@ -703,10 +703,11 @@ out.onclick = () => {
 
 let togglebtnTwo = document.querySelector(".toggle-menu-two");
 let filt = document.getElementById('filter');
-let shopExit = document.querySelector(".shopHeader");
+let outfilt = document.querySelector(".closefilter");
 togglebtnTwo.onclick = function() {
     filt.style.left = "-25px";
+    outfilt.style.display = "block";
 };
-shopExit.onclick = () => {
+outfilt.onclick = () => {
     filt.style.left = "-290px";
 }
