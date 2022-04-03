@@ -457,9 +457,7 @@ function showData(list) {
                 `;
     }
     var element = document.getElementById("shopDescriptionContent");
-    element.innerHTML = '';
-    // debugger
-
+    // element.innerHTML = '';
     element.innerHTML = data;
 }
 
@@ -582,11 +580,6 @@ document.getElementById('sony').onclick = () => {
 
 let low = document.getElementById('lowest');
 low.onclick = function sortLowest() {
-    var ascending = productResult.sort((cardOne, cardTwo) => parseFloat(cardOne.price) - parseFloat(cardTwo.price));
-    console.log("yes");
-    console.log(ascending);
-
-
     data += `${productResult.sort((cardOne, cardTwo) => parseFloat(cardOne.price) - parseFloat(cardTwo.price))}`;
     document.getElementById("shopDescriptionContent").innerHTML = data;
     showData(productResult);
@@ -595,9 +588,6 @@ low.onclick = function sortLowest() {
 
 let high = document.getElementById('heighest');
 high.onclick = () => {
-    var descending = productResult.sort((cardOne, cardTwo) => parseFloat(cardTwo.price) - parseFloat(cardOne.price));
-    console.log("yes");
-    console.log(descending);
     data += `${productResult.sort((cardOne, cardTwo) => parseFloat(cardTwo.price) - parseFloat(cardOne.price))}`;
     document.getElementById("shopDescriptionContent").innerHTML = data;
     showData(productResult);
@@ -700,9 +690,23 @@ document.querySelector(".settings-icon i").onclick = function() {
 
 let togglebtn = document.querySelector(".toggle-menu");
 let dash = document.getElementById('sideNav');
-
-togglebtn.onclick = function(e) {
-    this.classList.toggle("menu-active");
+let out = document.querySelector(".close");
+let circle = document.querySelector(".circle");
+togglebtn.onclick = function() {
     dash.style.left = "0px";
-    dash.style.width = "17%";
+    out.style.display = "block";
+    circle.style.display = "none";
 };
+out.onclick = () => {
+    dash.style.left = "-250px";
+}
+
+let togglebtnTwo = document.querySelector(".toggle-menu-two");
+let filt = document.getElementById('filter');
+let shopExit = document.querySelector(".shopHeader");
+togglebtnTwo.onclick = function() {
+    filt.style.left = "-25px";
+};
+shopExit.onclick = () => {
+    filt.style.left = "-290px";
+}
